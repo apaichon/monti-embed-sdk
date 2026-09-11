@@ -1,0 +1,33 @@
+{
+  "name": "@monti/embed-web-component",
+  "version": "0.1.0",
+  "description": "The <monti-embed> custom element for Monti Call Center",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["monti", "call-center", "embed", "web-component", "custom-element"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "sideEffects": true,
+  "dependencies": {
+    "@monti/embed-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "@monti/embed-svelte",
+  "version": "0.1.0",
+  "description": "Svelte component and imperative helper for the Monti Call Center embed",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "svelte": "./src/MontiEmbed.svelte",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./src/MontiEmbed.svelte",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./MontiEmbed.svelte": {
+      "svelte": "./src/MontiEmbed.svelte",
+      "default": "./src/MontiEmbed.svelte"
+    }
+  },
+  "files": ["dist", "src", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "prepublishOnly": "npm run build && npm run check"
+  },
+  "keywords": ["monti", "call-center", "embed", "svelte"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "peerDependencies": {
+    "svelte": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "@monti/embed-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "svelte": "^5.38.7",
+    "svelte-check": "^4.3.1",
+    "typescript": "^5.9.2"
+  }
+}
