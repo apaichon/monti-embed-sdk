@@ -1,5 +1,5 @@
 {
-  "name": "monti-embed-sdk",
+  "name": "monti-embed-sdk-monorepo",
   "version": "0.1.0",
   "private": true,
   "description": "Monti Call Center embed SDK monorepo for vanilla JavaScript, Web Components, React, Vue, and Svelte",
@@ -13,8 +13,8 @@
     "packages/embed-svelte"
   ],
   "scripts": {
-    "build": "npm run build -w @monti/embed-core && npm run build -w @monti/embed-vanilla && npm run build -w @monti/embed-web-component && npm run build -w @monti/embed-react && npm run build -w @monti/embed-vue && npm run build -w @monti/embed-svelte",
-    "test": "npm run test -w @monti/embed-core && npm run check -w @monti/embed-svelte",
+    "build": "npm run build -w monti-embed-sdk-core && npm run build -w monti-embed-sdk && npm run build -w monti-embed-sdk-web-component && npm run build -w monti-embed-sdk-react && npm run build -w monti-embed-sdk-vue && npm run build -w monti-embed-sdk-svelte",
+    "test": "npm run test -w monti-embed-sdk-core && npm run check -w monti-embed-sdk-svelte",
     "verify": "npm run build && npm test",
     "pack:check": "npm pack --dry-run --workspaces"
   },

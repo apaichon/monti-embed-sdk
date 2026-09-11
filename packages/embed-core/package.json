@@ -1,5 +1,5 @@
 {
-  "name": "@monti/embed-core",
+  "name": "monti-embed-sdk-core",
   "version": "0.1.0",
   "description": "Framework-agnostic Monti Call Center web embed lifecycle",
   "type": "module",

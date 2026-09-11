@@ -1,8 +1,8 @@
-# @monti/embed-vue
+# monti-embed-sdk-vue
 
 ```vue
 <script setup lang="ts">
-import { MontiEmbedVue } from "@monti/embed-vue";
+import { MontiEmbedVue } from "monti-embed-sdk-vue";
 </script>
 
 <template>

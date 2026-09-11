@@ -12,7 +12,7 @@ import {
   type EmbedError,
   type EmbedPosition,
   type EmbedResolveResult,
-} from "@monti/embed-core";
+} from "monti-embed-sdk-core";
 
 export type { EmbedError, EmbedPosition, EmbedResolveResult };
 export { MontiEmbed };

@@ -1,4 +1,4 @@
-import { MontiEmbed, type EmbedOptions } from "@monti/embed-core";
+import { MontiEmbed, type EmbedOptions } from "monti-embed-sdk-core";
 
 export interface MountMontiEmbedSvelteOptions extends EmbedOptions {
   target?: HTMLElement;

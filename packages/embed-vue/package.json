@@ -1,5 +1,5 @@
 {
-  "name": "@monti/embed-vue",
+  "name": "monti-embed-sdk-vue",
   "version": "0.1.0",
   "description": "Vue 3 component and plugin for the Monti Call Center embed",
   "type": "module",
@@ -28,7 +28,7 @@
     "vue": "^3.3.0"
   },
   "dependencies": {
-    "@monti/embed-core": "^0.1.0"
+    "monti-embed-sdk-core": "^0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.9.2",

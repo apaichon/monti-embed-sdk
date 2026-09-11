@@ -1,6 +1,6 @@
-import { MontiEmbed, type EmbedOptions } from "@monti/embed-core";
+import { MontiEmbed, type EmbedOptions } from "monti-embed-sdk-core";
 
-export * from "@monti/embed-core";
+export * from "monti-embed-sdk-core";
 
 /** Start mounting immediately and return the controllable SDK instance. */
 export function mountMontiEmbed(options: EmbedOptions): MontiEmbed {

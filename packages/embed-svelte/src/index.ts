@@ -4,6 +4,6 @@ export {
   type EmbedOptions,
   type EmbedPosition,
   type EmbedResolveResult,
-} from "@monti/embed-core";
+} from "monti-embed-sdk-core";
 export { mountMontiEmbedSvelte } from "./mount.js";
 export type { MontiEmbedSvelteHandle, MountMontiEmbedSvelteOptions } from "./mount.js";

@@ -1,9 +1,9 @@
-# @monti/embed-core
+# monti-embed-sdk-core
 
 Framework-neutral, typed Monti Call Center embed lifecycle. Most applications should install one of the framework adapters instead.
 
 ```ts
-import { createMontiEmbed } from "@monti/embed-core";
+import { createMontiEmbed } from "monti-embed-sdk-core";
 
 const monti = await createMontiEmbed({
   embedKey: "emb_YOUR_KEY",

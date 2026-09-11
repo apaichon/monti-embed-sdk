@@ -1,8 +1,8 @@
-# @monti/embed-svelte
+# monti-embed-sdk-svelte
 
 ```svelte
 <script lang="ts">
-  import MontiEmbed from "@monti/embed-svelte/MontiEmbed.svelte";
+  import MontiEmbed from "monti-embed-sdk-svelte/MontiEmbed.svelte";
 </script>
 
 <MontiEmbed

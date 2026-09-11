@@ -1,8 +1,8 @@
-# @monti/embed-web-component
+# monti-embed-sdk-web-component
 
 ```html
 <script type="module">
-  import "@monti/embed-web-component";
+  import "monti-embed-sdk-web-component";
 </script>
 
 <monti-embed

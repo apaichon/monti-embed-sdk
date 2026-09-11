@@ -1,7 +1,7 @@
-# @monti/embed-react
+# monti-embed-sdk-react
 
 ```tsx
-import { MontiEmbedReact } from "@monti/embed-react";
+import { MontiEmbedReact } from "monti-embed-sdk-react";
 
 export function SupportWidget() {
   return (

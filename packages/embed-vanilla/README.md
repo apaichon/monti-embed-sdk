@@ -1,7 +1,7 @@
-# @monti/embed-vanilla
+# monti-embed-sdk
 
 ```js
-import { mountMontiEmbed } from "@monti/embed-vanilla";
+import { mountMontiEmbed } from "monti-embed-sdk";
 
 const monti = mountMontiEmbed({
   embedKey: "emb_YOUR_KEY",
