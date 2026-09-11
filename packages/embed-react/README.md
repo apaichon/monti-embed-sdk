@@ -1,7 +1,7 @@
-# monti-embed-sdk-react
+# @libratech/embed-react
 
 ```tsx
-import { MontiEmbedReact } from "monti-embed-sdk-react";
+import { MontiEmbedReact } from "@libratech/embed-react";
 
 export function SupportWidget() {
   return (

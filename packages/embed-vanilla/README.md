@@ -1,7 +1,7 @@
-# monti-embed-sdk
+# @libratech/embed-vanilla
 
 ```js
-import { mountMontiEmbed } from "monti-embed-sdk";
+import { mountMontiEmbed } from "@libratech/embed-vanilla";
 
 const monti = mountMontiEmbed({
   embedKey: "emb_YOUR_KEY",

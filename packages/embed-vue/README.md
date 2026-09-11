@@ -1,8 +1,8 @@
-# monti-embed-sdk-vue
+# @libratech/embed-vue
 
 ```vue
 <script setup lang="ts">
-import { MontiEmbedVue } from "monti-embed-sdk-vue";
+import { MontiEmbedVue } from "@libratech/embed-vue";
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 {
-  "name": "monti-embed-sdk",
+  "name": "@libratech/embed-vanilla",
   "version": "0.1.0",
   "description": "Plain JavaScript and TypeScript adapter for the Monti Call Center embed",
   "type": "module",
@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "monti-embed-sdk-core": "^0.1.0"
+    "@libratech/embed-core": "^0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.9.2"

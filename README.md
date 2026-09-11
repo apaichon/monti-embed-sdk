@@ -1,6 +1,6 @@
 # Monti Embed SDK
 
-Small, typed packages for embedding the Monti Call Center in vanilla JavaScript, a Web Component, React, Vue 3, or Svelte. Every adapter uses the same `monti-embed-sdk-core` lifecycle and the same Monti `/embed` experience.
+Small, typed packages for embedding the Monti Call Center in vanilla JavaScript, a Web Component, React, Vue 3, or Svelte. Every adapter uses the same `@libratech/embed-core` lifecycle and the same Monti `/embed` experience.
 
 Using the SDK before npm publication? See [Install from Git](docs/INSTALL_FROM_GIT.md).
 
@@ -8,24 +8,24 @@ Using the SDK before npm publication? See [Install from Git](docs/INSTALL_FROM_G
 
 | Package | Use it for |
 | --- | --- |
-| `monti-embed-sdk-core` | Shared typed lifecycle and advanced integrations |
-| `monti-embed-sdk` | Plain JavaScript or TypeScript |
-| `monti-embed-sdk-web-component` | HTML, Angular, or any Custom Elements host |
-| `monti-embed-sdk-react` | React 18+ component and hook |
-| `monti-embed-sdk-vue` | Vue 3 component and plugin |
-| `monti-embed-sdk-svelte` | Svelte 4/5 component and imperative helper |
+| `@libratech/embed-core` | Shared typed lifecycle and advanced integrations |
+| `@libratech/embed-vanilla` | Plain JavaScript or TypeScript |
+| `@libratech/embed-web-component` | HTML, Angular, or any Custom Elements host |
+| `@libratech/embed-react` | React 18+ component and hook |
+| `@libratech/embed-vue` | Vue 3 component and plugin |
+| `@libratech/embed-svelte` | Svelte 4/5 component and imperative helper |
 
 The public embed key comes from **Tenant → Embed**. In production, use an HTTPS `apiBase` and add the exact host-site origin to Monti's allowed origins.
 
 ## Web Component
 
 ```bash
-npm install monti-embed-sdk-web-component
+npm install @libratech/embed-web-component
 ```
 
 ```html
 <script type="module">
-  import "monti-embed-sdk-web-component";
+  import "@libratech/embed-web-component";
 </script>
 
 <monti-embed
@@ -47,12 +47,12 @@ npm install monti-embed-sdk-web-component
 ## Vue 3
 
 ```bash
-npm install monti-embed-sdk-vue vue
+npm install @libratech/embed-vue vue
 ```
 
 ```vue
 <script setup lang="ts">
-import { MontiEmbedVue } from "monti-embed-sdk-vue";
+import { MontiEmbedVue } from "@libratech/embed-vue";
 </script>
 
 <template>
@@ -70,11 +70,11 @@ import { MontiEmbedVue } from "monti-embed-sdk-vue";
 ## React
 
 ```bash
-npm install monti-embed-sdk-react react react-dom
+npm install @libratech/embed-react react react-dom
 ```
 
 ```tsx
-import { MontiEmbedReact } from "monti-embed-sdk-react";
+import { MontiEmbedReact } from "@libratech/embed-react";
 
 export function SupportWidget() {
   return (
@@ -91,12 +91,12 @@ export function SupportWidget() {
 ## Svelte
 
 ```bash
-npm install monti-embed-sdk-svelte svelte
+npm install @libratech/embed-svelte svelte
 ```
 
 ```svelte
 <script lang="ts">
-  import MontiEmbed from "monti-embed-sdk-svelte/MontiEmbed.svelte";
+  import MontiEmbed from "@libratech/embed-svelte/MontiEmbed.svelte";
 </script>
 
 <MontiEmbed
@@ -109,11 +109,11 @@ npm install monti-embed-sdk-svelte svelte
 ## Vanilla JavaScript
 
 ```bash
-npm install monti-embed-sdk
+npm install @libratech/embed-vanilla
 ```
 
 ```js
-import { mountMontiEmbed } from "monti-embed-sdk";
+import { mountMontiEmbed } from "@libratech/embed-vanilla";
 
 const monti = mountMontiEmbed({
   embedKey: "emb_YOUR_KEY",
@@ -149,4 +149,4 @@ npm run verify
 npm run pack:check
 ```
 
-Publish `monti-embed-sdk-core` first, followed by the five adapters. All packages are configured for public, unscoped publishing and ESM consumption.
+Publish `@libratech/embed-core` first, followed by the five adapters. All packages are configured for public scoped publishing and ESM consumption.

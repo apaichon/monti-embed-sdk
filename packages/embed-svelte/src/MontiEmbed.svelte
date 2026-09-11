@@ -5,7 +5,7 @@
     type EmbedError,
     type EmbedPosition,
     type EmbedResolveResult,
-  } from "monti-embed-sdk-core";
+  } from "@libratech/embed-core";
 
   export let embedKey: string;
   export let apiBase: string;

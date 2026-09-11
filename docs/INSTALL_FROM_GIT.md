@@ -1,6 +1,6 @@
 # Install Monti Embed SDK from Git
 
-This guide shows how to use the SDK directly from a Git checkout before the `monti-embed-sdk*` packages are published to npm.
+This guide shows how to use the SDK directly from a Git checkout before the `@libratech/embed-*` packages are published to npm.
 
 Because this repository is an npm monorepo, install the individual package directories rather than installing the repository root as one dependency.
 
@@ -30,7 +30,7 @@ git@github.com:your-org/monti-embed-sdk.git
 
 ## 2. Install an adapter in your application
 
-Every adapter uses `monti-embed-sdk-core`. From your application directory, install the core and one adapter using their local paths.
+Every adapter uses `@libratech/embed-core`. From your application directory, install the core and one adapter using their local paths.
 
 Assuming this layout:
 
@@ -69,8 +69,8 @@ You can also record the Git checkout as local dependencies in your application's
 ```json
 {
   "dependencies": {
-    "monti-embed-sdk-core": "file:../monti-embed-sdk/packages/embed-core",
-    "monti-embed-sdk-react": "file:../monti-embed-sdk/packages/embed-react"
+    "@libratech/embed-core": "file:../monti-embed-sdk/packages/embed-core",
+    "@libratech/embed-react": "file:../monti-embed-sdk/packages/embed-react"
   }
 }
 ```
@@ -101,7 +101,7 @@ Use HTTPS for both the application and Monti in production so browser microphone
 ### Vanilla JavaScript or TypeScript
 
 ```js
-import { mountMontiEmbed } from "monti-embed-sdk";
+import { mountMontiEmbed } from "@libratech/embed-vanilla";
 
 const monti = mountMontiEmbed({
   embedKey: "emb_YOUR_KEY",
@@ -139,7 +139,7 @@ const monti = mountMontiEmbed({
 
 ```html
 <script type="module">
-  import "monti-embed-sdk-web-component";
+  import "@libratech/embed-web-component";
 </script>
 
 <monti-embed
@@ -169,7 +169,7 @@ The Web Component accepts `base-url` as an alias for the old demos, but new inte
 ### React
 
 ```tsx
-import { MontiEmbedReact } from "monti-embed-sdk-react";
+import { MontiEmbedReact } from "@libratech/embed-react";
 
 export function SupportWidget() {
   return (
@@ -206,7 +206,7 @@ For Next.js App Router, place the component in a file beginning with `"use clien
 
 ```vue
 <script setup lang="ts">
-import { MontiEmbedVue } from "monti-embed-sdk-vue";
+import { MontiEmbedVue } from "@libratech/embed-vue";
 
 const handleError = (error: { code: string; message: string }) => {
   console.error(error.code, error.message);
@@ -229,7 +229,7 @@ Optional global registration with a default API base:
 
 ```ts
 import { createApp } from "vue";
-import { createMontiEmbedPlugin } from "monti-embed-sdk-vue";
+import { createMontiEmbedPlugin } from "@libratech/embed-vue";
 import App from "./App.vue";
 
 createApp(App)
@@ -247,7 +247,7 @@ The globally registered component can then omit `api-base`:
 
 ```svelte
 <script lang="ts">
-  import MontiEmbed from "monti-embed-sdk-svelte/MontiEmbed.svelte";
+  import MontiEmbed from "@libratech/embed-svelte/MontiEmbed.svelte";
 
   function handleError(event: CustomEvent<{ code: string; message: string }>) {
     console.error(event.detail.code, event.detail.message);

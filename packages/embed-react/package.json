@@ -1,5 +1,5 @@
 {
-  "name": "monti-embed-sdk-react",
+  "name": "@libratech/embed-react",
   "version": "0.1.0",
   "description": "React component and hook for the Monti Call Center embed",
   "type": "module",
@@ -29,7 +29,7 @@
     "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "monti-embed-sdk-core": "^0.1.0"
+    "@libratech/embed-core": "^0.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.24",

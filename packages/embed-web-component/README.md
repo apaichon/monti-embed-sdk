@@ -1,8 +1,8 @@
-# monti-embed-sdk-web-component
+# @libratech/embed-web-component
 
 ```html
 <script type="module">
-  import "monti-embed-sdk-web-component";
+  import "@libratech/embed-web-component";
 </script>
 
 <monti-embed

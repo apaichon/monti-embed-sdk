@@ -1,5 +1,5 @@
 {
-  "name": "monti-embed-sdk-web-component",
+  "name": "@libratech/embed-web-component",
   "version": "0.1.0",
   "description": "The <monti-embed> custom element for Monti Call Center",
   "type": "module",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "sideEffects": true,
   "dependencies": {
-    "monti-embed-sdk-core": "^0.1.0"
+    "@libratech/embed-core": "^0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.9.2"

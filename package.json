@@ -13,8 +13,8 @@
     "packages/embed-svelte"
   ],
   "scripts": {
-    "build": "npm run build -w monti-embed-sdk-core && npm run build -w monti-embed-sdk && npm run build -w monti-embed-sdk-web-component && npm run build -w monti-embed-sdk-react && npm run build -w monti-embed-sdk-vue && npm run build -w monti-embed-sdk-svelte",
-    "test": "npm run test -w monti-embed-sdk-core && npm run check -w monti-embed-sdk-svelte",
+    "build": "npm run build -w @libratech/embed-core && npm run build -w @libratech/embed-vanilla && npm run build -w @libratech/embed-web-component && npm run build -w @libratech/embed-react && npm run build -w @libratech/embed-vue && npm run build -w @libratech/embed-svelte",
+    "test": "npm run test -w @libratech/embed-core && npm run check -w @libratech/embed-svelte",
     "verify": "npm run build && npm test",
     "pack:check": "npm pack --dry-run --workspaces"
   },
