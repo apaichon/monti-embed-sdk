@@ -1,0 +1,37 @@
+{
+  "name": "@monti/embed-vue",
+  "version": "0.1.0",
+  "description": "Vue 3 component and plugin for the Monti Call Center embed",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["monti", "call-center", "embed", "vue"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "dependencies": {
+    "@monti/embed-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vue": "^3.5.21"
+  }
+}
